@@ -1,14 +1,11 @@
 package org.example;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args )
     {
-        StringBuilder inputText = new StringBuilder("Ознайомлення з рядками та використання основних методів їх обробки в мові програмування Java. Здобуття навичок у використанні рядків в мові програмування Java.");
+        StringBuilder inputText = new StringBuilder("Familiarization with strings and use of basic methods of processing them in the Java programming language. " +
+                                                    "Acquiring skills in using strings in the Java programming language.");
 
         try {
             WordSorter sorter = new WordSorter();
