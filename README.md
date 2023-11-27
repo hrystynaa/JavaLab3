@@ -21,5 +21,5 @@ that may occur during the execution of the program code. All variables must be d
 - Build and run project with IDE or use this command:
 ```cmd
   mvn clean install
-  java -cp target/Lab2-1.0-SNAPSHOT.jar org.example.App
+  java -cp target/Lab3-1.0-SNAPSHOT.jar org.example.App
 ```
