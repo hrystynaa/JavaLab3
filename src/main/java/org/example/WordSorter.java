@@ -5,7 +5,7 @@ import java.util.Comparator;
 
 public class WordSorter {
     public StringBuilder sortWordsByVowels(StringBuilder text) throws IllegalArgumentException {
-        if (text == null || text.length() == 0) {
+        if (text == null || text.length() == 0 || isWhiteSpaceOnly(text)) {
             throw new IllegalArgumentException("Error: Input text cannot be empty");
         }
         StringBuilder curWord = new StringBuilder();
@@ -35,6 +35,15 @@ public class WordSorter {
             sortedText.append(word).append(" ");
         }
         return sortedText;
+    }
+
+    private boolean isWhiteSpaceOnly(StringBuilder text) {
+        for (int i = 0; i < text.length(); i++) {
+            if (!Character.isWhitespace(text.charAt(i))) {
+                return false;
+            }
+        }
+        return true;
     }
 
     public static int countVowels(StringBuilder word) {
